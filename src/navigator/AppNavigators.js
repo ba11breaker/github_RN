@@ -8,6 +8,7 @@ import {
 import WelcomePage from '../page/WelcomePage';
 import HomePage from '../page/HomePage';
 import DetailPage from '../page/DetailPage';
+import FetchDemoPage from '../page/FetchDemoPage';
 
 const InitNavigator = createStackNavigator(
     {
@@ -30,6 +31,9 @@ const MainNavigator = createStackNavigator(
         },
         DetailPage: {
             screen: DetailPage,
+        },
+        FetchDemoPage: {
+            screen: FetchDemoPage,
         }
     }
 );

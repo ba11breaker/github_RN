@@ -67,7 +67,7 @@ class PopularTab extends Component {
             <SafeAreaView style={styles.container}>
                 <Text>{this.props.tabLabel}</Text>
                 <Text onPress={() => {
-                    NavigationUtil.goPage({}, 'DetailPage');
+                    NavigationUtil.goPage({}, 'FetchDemoPage');
                 }}>Go to Detail</Text>
             </SafeAreaView>
         )
