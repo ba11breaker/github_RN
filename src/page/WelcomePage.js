@@ -4,11 +4,12 @@ import {
     Text, 
     View
 } from 'react-native';
+import NavigationUtil from '../navigator/NavigationUtil';
 
 export default class WelcomePage extends React.Component {
     componentDidMount() {
         this.timer = setTimeout(() => {
-
+            NavigationUtil.resetToHomePage(this.props);
         }, 200);
     }
     componentWillUnmount() {
